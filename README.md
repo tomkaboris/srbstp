@@ -37,10 +37,9 @@ pip install -e .
 ```
 
 ## Zavisnosti
-- nltk (za HMM tagger, opcionalno)
-- pytest (za testove)
-- googletrans (za primer prevođenja, opcionalno)
-- (ostalo videti u pyproject.toml ili requirements.txt)
+- nltk
+- regex
+- pytest (za testove, opcionalno)
 
 
 ## Tokenizacija
