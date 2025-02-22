@@ -1,0 +1,53 @@
+{
+  "label_counts": {
+    "pozitivno": 2,
+    "negativno": 2
+  },
+  "word_counts": {
+    "pozitivno": {
+      "ovo": 1,
+      "baš": 1,
+      "dobar": 1,
+      "film": 1,
+      "sjajan": 1,
+      "nastup": 1,
+      "odlična": 1,
+      "energija": 1
+    },
+    "negativno": {
+      "ovaj": 1,
+      "film": 1,
+      "loš": 1,
+      "dosadan": 1,
+      "katastrofa": 1,
+      "nikada": 1,
+      "više": 1,
+      "neću": 1,
+      "doći": 1
+    }
+  },
+  "total_words_in_label": {
+    "pozitivno": 8,
+    "negativno": 9
+  },
+  "vocab": [
+    "katastrofa",
+    "odlična",
+    "nastup",
+    "film",
+    "neću",
+    "baš",
+    "dobar",
+    "energija",
+    "doći",
+    "dosadan",
+    "sjajan",
+    "više",
+    "ovo",
+    "loš",
+    "nikada",
+    "ovaj"
+  ],
+  "remove_stopwords": true,
+  "alpha": 1.0
+}
