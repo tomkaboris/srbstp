@@ -43,10 +43,10 @@ pip install -e .
 
 
 ## Tokenizacija
-Modul: textblob_sr/tokenizers/sr_tokenizer.py
+Modul: srbstp/tokenizers/sr_tokenizer.py
 
 ```bash
-from textblob_sr.tokenizers.sr_tokenizer import SrTokenizer
+from srbstp.tokenizers.sr_tokenizer import SrTokenizer
 
 tokenizer = SrTokenizer()
 
@@ -66,7 +66,7 @@ print(words)
 
 
 ## Stop reči i leksikon
-Folder: textblob_sr/data/
+Folder: srbstp/data/
 
 ### sr_stopwords.py
 - Sadrži skup (set) srpskih stop reči i metode:
@@ -74,7 +74,7 @@ Folder: textblob_sr/data/
 - get_stopwords() -> set[str]
 
 ```bash
-from textblob_sr.data.sr_stopwords import is_stopword
+from srbstp.data.sr_stopwords import is_stopword
 
 print(is_stopword("i"))         # True
 print(is_stopword("kompjuter")) # False
@@ -86,7 +86,7 @@ print(is_stopword("kompjuter")) # False
 - get_sentiment_polarity(word: str) -> float (vraća -1 do +1, 0 ako je reč nepoznata)
 
 ```bash
-from textblob_sr.data.sr_lexicon import get_sentiment_polarity
+from srbstp.data.sr_lexicon import get_sentiment_polarity
 
 print(get_sentiment_polarity("dobar"))    # 1
 print(get_sentiment_polarity("užasan"))   # -1
@@ -96,7 +96,7 @@ print(get_sentiment_polarity("kompjuter")) # 0 (nepoznato)
 
 ## Normalizacija
 
-Modul: textblob_sr/utils/sr_normalizer.py
+Modul: srbstp/utils/sr_normalizer.py
 
 ### Ključne funkcije:
 - cyr_to_lat(text: str) -> str – ćirilica → latinica
@@ -105,7 +105,7 @@ Modul: textblob_sr/utils/sr_normalizer.py
 - normalize_text(text, to_lat=True, lowercase=True, strip_diacritics=False) -> str – omotač koji radi sve korake odjednom
 
 ```bash
-from textblob_sr.utils.sr_normalizer import cyr_to_lat, lat_to_cyr, remove_diacritics
+from srbstp.utils.sr_normalizer import cyr_to_lat, lat_to_cyr, remove_diacritics
 
 text_cyr = "Ово је пример ћириличног текста."
 text_lat = cyr_to_lat(text_cyr)
@@ -123,11 +123,11 @@ print(no_diacritics)
 
 
 ## Analiza sentimenta
-- Modul: textblob_sr/sentiments/sr_sentiment_analyzer.py
+- Modul: srbstp/sentiments/sr_sentiment_analyzer.py
 
 Primer:
 ```bash
-from textblob_sr.sentiments.sr_sentiment_analyzer import SrSentimentAnalyzer
+from srbstp.sentiments.sr_sentiment_analyzer import SrSentimentAnalyzer
 
 analyzer = SrSentimentAnalyzer()
 score = analyzer.analyze("Ovo je odličan i sjajan dan!")
@@ -136,12 +136,12 @@ print(score)
 ```
 
 ## Klasifikacija (Naive Bayes)
-- Modul: textblob_sr/classifiers/sr_naive_bayes.py
+- Modul: srbstp/classifiers/sr_naive_bayes.py
 - Klasa SrNaiveBayesClassifier implementira osnovni Bag‑of‑Words pristup s Laplace smoothing‑om.
 
 Primer:
 ```bash
-from textblob_sr.classifiers.sr_naive_bayes import SrNaiveBayesClassifier
+from srbstp.classifiers.sr_naive_bayes import SrNaiveBayesClassifier
 
 training_data = [
     ("Ovo je fantastično!", "pozitivno"),
@@ -163,12 +163,12 @@ new_clf.load_model("nb_model.json")
 ```
 
 ## POS Tagger (u procesu)
-- Folder: textblob_sr/taggers/
+- Folder: srbstp/taggers/
 - Sopstveni model (sr_tagger.py)
 - Koristi NLTK i HMM (Hidden Markov Model):
 
 ```bash
-from textblob_sr.taggers.sr_tagger import SrPosTagger
+from srbstp.taggers.sr_tagger import SrPosTagger
 
 tagger = SrPosTagger()
 # 1) Treniranje:  tagger.train(tagged_sentences)
