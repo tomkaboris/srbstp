@@ -23,7 +23,8 @@ classifiers = [
 ]
 dependencies = [
   "nltk",
-  "regex"
+  "regex",
+  "pytest"
 ]
 
 [tool.setuptools.packages.find]
