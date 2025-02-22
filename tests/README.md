@@ -1,0 +1,2 @@
+## Zavisnosti
+- pytest

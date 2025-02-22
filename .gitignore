@@ -1,0 +1,22 @@
+# Ignoriši sve fajlove i foldere
+*
+
+# Ignorisi __pycache__ u svim direktorijumima i poddirektorijumima
+**/__pycache__/
+tests/__pycache__/
+
+# Ali NEMOJ ignorisati .gitignore fajl (uvek ga čuvaj)
+!.gitignore
+
+# NEMOJ ignorisati određene fajlove
+!README.md
+!LICENCE
+!requirements.txt
+!nb_model.json
+!pyproject.toml
+
+# NEMOJ ignorisati ceo folder i njegov sadržaj
+!src/
+!tests/
+!examples/
+
