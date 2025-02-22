@@ -22,7 +22,7 @@ Pruža jednostavan API za uranjanje u uobičajene zadatke obrade prirodnog jezik
 4. [Normalizacija](#normalizacija)  
 5. [Analiza sentimenta](#analiza-sentimenta)  
 6. [Klasifikacija (Naive Bayes)](#klasifikacija-naive-bayes)  
-7. [POS Tagger](#pos-tagger)  
+7. [POS Tagger](#pos-tagger-u-procesu)  
 8. [Testovi](#testovi)  
 9. [Doprinos i razvoj](#doprinos-i-razvoj) 
 
@@ -198,17 +198,16 @@ pytest tests
 
 
 ## Doprinos i razvoj
-Fork/Clone: Napravite fork ili klonirajte repo.
-Razvojne zavisnosti: Instalirajte pytest, nltk, googletrans itd.
-Izmena koda: Dodajte nove funkcionalnosti ili optimizacije.
-Testiranje: Obezbedite testove za svoju izmenu.
-Pull Request: Napravite PR s opisom izmena.
-Ideje za budućnost:
+* Fork/Clone: Napravite fork ili klonirajte repo.
+* Razvojne zavisnosti: Instalirajte pytest, nltk, googletrans itd.
+* Izmena koda: Dodajte nove funkcionalnosti ili optimizacije.
+* Testiranje: Obezbedite testove za svoju izmenu.
+* Pull Request: Napravite PR s opisom izmena.
 
-Bogatiji srpski sentiment leksikon
-Naprednija obrada negacije i modaliteta
-Offline prevod (npr. MarianMT)
-Named Entity Recognition (NER) za srpski
-Konverzija ćirilice↔latinice zasnovana na zvaničnim standardima (velika/mala slova, digrafi, itd.)
+### Ideje za budućnost:
 
-
+* Bogatiji srpski sentiment leksikon
+* Naprednija obrada negacije i modaliteta
+* Offline prevod (npr. MarianMT)
+* Named Entity Recognition (NER) za srpski
+* Konverzija ćirilice↔latinice zasnovana na zvaničnim standardima (velika/mala slova, digrafi, itd.)
