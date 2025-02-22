@@ -24,8 +24,7 @@ Pruža jednostavan API za uranjanje u uobičajene zadatke obrade prirodnog jezik
 6. [Klasifikacija (Naive Bayes)](#klasifikacija-naive-bayes)  
 7. [POS Tagger](#pos-tagger)  
 8. [Testovi](#testovi)  
-9. [Doprinos i razvoj](#doprinos-i-razvoj)  
-10. [Licenca](#licenca)  
+9. [Doprinos i razvoj](#doprinos-i-razvoj) 
 
 ---
 
