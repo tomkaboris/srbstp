@@ -1,0 +1,5 @@
+nltk
+googletrans
+regex
+pickle
+unicodedata

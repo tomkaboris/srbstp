@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srbstp"
+version = "0.1.0"
+description = "Simplified Serbian Text Processing"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+authors = [
+  { name="Boris Tomka", email="tomkaboris@gmail.com" }
+]
+keywords = ["nlp", "serbian", "textblob", "sentiment", "pos-tagging"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+  "nltk",
+  "googletrans",
+  "regex",
+  "pickle",
+  "unicodedata"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["myvenv*", "tests*"]
+
+[project.urls]
+"Source" = "https://github.com/tomkaboris/srbstp"
+"Issues" = "https://github.com/tomkaboris/srbstp/issues"
+"Documentation" = "https://github.com/tomkaboris/srbstp#readme"
