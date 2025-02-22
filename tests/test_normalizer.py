@@ -35,8 +35,8 @@ def test_lat_to_cyr_digraphs():
 def test_remove_diacritics():
     text = "Šđćčž Ćirilica Đavo žurka"
     # Uklanja sve dijakritike: Š->S, đ->d, ć->c, č->c, ž->z...
-    # Rezultat: "Sdccz Cirilica Djavo zurka"
-    expected = "Sdccz Cirilica Djavo zurka"
+    # Rezultat: "Sdccz Cirilica Davo zurka"
+    expected = "Sdccz Cirilica Davo zurka"
     assert remove_diacritics(text) == expected
 
 def test_normalize_text_to_lat_lower_strip():

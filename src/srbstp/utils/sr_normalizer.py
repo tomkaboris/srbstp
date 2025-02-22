@@ -88,6 +88,10 @@ def lat_to_cyr(text: str) -> str:
     text = re.sub(r'DŽ', 'Џ', text)
     text = re.sub(r'dž', 'џ', text)
     text = re.sub(r'Dž', 'Џ', text)  # varijacije velikih/malih slova
+
+    text = re.sub(r'DJ', 'Ђ', text)
+    text = re.sub(r'dj', 'ђ', text)
+    text = re.sub(r'Dj', 'Ђ', text)  # varijacije velikih/malih slova
     
     text = re.sub(r'LJ', 'Љ', text)
     text = re.sub(r'lj', 'љ', text)
@@ -126,6 +130,8 @@ def remove_diacritics(text: str) -> str:
     normalized = unicodedata.normalize('NFD', text)
     # uklanjamo sve karaktere koji imaju "Mn" (mark, nonspacing)
     without_diacritics = "".join(ch for ch in normalized if unicodedata.category(ch) != 'Mn')
+    # Manually replace problematic characters
+    without_diacritics = without_diacritics.replace('đ', 'd').replace('Đ', 'D')
     return without_diacritics
 
 def normalize_text(text: str, to_lat: bool = True, lowercase: bool = True, strip_diacritics: bool = False) -> str:
