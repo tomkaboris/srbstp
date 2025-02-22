@@ -1,4 +1,4 @@
-name: Up to Date
+name: Run Pytest
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  update:
-    name: Update
+  test:
+    name: Run Tests
     runs-on: ubuntu-latest
 
     steps:
