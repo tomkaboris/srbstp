@@ -3,7 +3,6 @@
 
 # Ignorisi __pycache__ u svim direktorijumima i poddirektorijumima
 **/__pycache__/
-tests/__pycache__/
 
 # Ali NEMOJ ignorisati .gitignore fajl (uvek ga čuvaj)
 !.gitignore
