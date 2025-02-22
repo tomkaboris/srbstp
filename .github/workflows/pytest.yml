@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test:
+  run-pytest:
     name: Run Pytest
     runs-on: ubuntu-latest
 
