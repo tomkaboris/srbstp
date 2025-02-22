@@ -10,7 +10,7 @@
 - Klasifikaciju (Naive Bayes) :white_check_mark: 
 - Prevođenje (eksterni API ili modeli) :x: 
 - Part‑of‑Speech (POS) tagovanje (sopstveni model uz NLTK ili integracija s drugim alatima) :white_check_mark:
--
+
 Pruža jednostavan API za uranjanje u uobičajene zadatke obrade prirodnog jezika (NLP), kao što su označavanje dela govora, izdvajanje imenskih fraza, analiza osećanja, klasifikacija i još mnogo toga.
 
 ---
