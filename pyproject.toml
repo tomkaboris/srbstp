@@ -23,7 +23,6 @@ classifiers = [
 ]
 dependencies = [
   "nltk",
-  "googletrans==3.1.0a0",
   "regex"
 ]
 

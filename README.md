@@ -3,12 +3,11 @@
 
 **srbstp** je biblioteka inspirisana [TextBlob‑om](https://textblob.readthedocs.io/en/dev/), prilagođena srpskom jeziku. Nudi osnovne funkcionalnosti za:
 
-- Tokenizaciju (reči i rečenice) :x:  
+- Tokenizaciju (reči i rečenice) :white_check_mark:  
 - Rad sa stop rečima i osnovnim leksikonom :white_check_mark: 
 - Normalizaciju i konverziju ćirilica ↔ latinica :white_check_mark: 
 - Analizu sentimenta (leksikon‑bazirani pristup) :white_check_mark: 
 - Klasifikaciju (Naive Bayes) :white_check_mark: 
-- Prevođenje (eksterni API ili modeli) :x: 
 - Part‑of‑Speech (POS) tagovanje (sopstveni model uz NLTK ili integracija s drugim alatima) :white_check_mark:
 
 Pruža jednostavan API za uranjanje u uobičajene zadatke obrade prirodnog jezika (NLP), kao što su označavanje dela govora, izdvajanje imenskih fraza, analiza osećanja, klasifikacija i još mnogo toga.
@@ -23,11 +22,10 @@ Pruža jednostavan API za uranjanje u uobičajene zadatke obrade prirodnog jezik
 4. [Normalizacija](#normalizacija)  
 5. [Analiza sentimenta](#analiza-sentimenta)  
 6. [Klasifikacija (Naive Bayes)](#klasifikacija-naive-bayes)  
-7. [Prevođenje](#prevođenje)  
-8. [POS Tagger](#pos-tagger)  
-9. [Testovi](#testovi)  
-10. [Doprinos i razvoj](#doprinos-i-razvoj)  
-11. [Licenca](#licenca)  
+7. [POS Tagger](#pos-tagger)  
+8. [Testovi](#testovi)  
+9. [Doprinos i razvoj](#doprinos-i-razvoj)  
+10. [Licenca](#licenca)  
 
 ---
 
@@ -166,25 +164,6 @@ new_clf = SrNaiveBayesClassifier()
 new_clf.load_model("nb_model.json")
 ```
 
-## Prevođenje
-- Modul: textblob_sr/translations/sr_translator.py
-- Ilustruje online prevođenje pomoću googletrans (nezvanično). Klasa SrTranslator:
-
-```bash
-from textblob_sr.translations.sr_translator import SrTranslator
-
-translator = SrTranslator(ensure_latin=True)
-
-sr_cyr_text = "Ово је тест."
-result_en = translator.translate_to_language(sr_cyr_text, dest_lang="en")
-print(result_en)
-# "This is a test."
-
-result_sr_lat = translator.translate_from_language("How are you?", src_lang="en", to_cyrillic=False)
-print(result_sr_lat)
-# "Kako si?"
-```
-
 ## POS Tagger (u procesu)
 - Folder: textblob_sr/taggers/
 - Sopstveni model (sr_tagger.py)
@@ -212,7 +191,6 @@ Svi testovi su u folderu tests/, npr:
 * test_normalizer.py
 * test_sentiment.py
 * test_naive_bayes.py
-* test_translator.py
 * test_tagger.py
 
 Pokreću se komandom:
