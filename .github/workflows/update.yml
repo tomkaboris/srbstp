@@ -10,7 +10,7 @@ on:
 
 jobs:
   update:
-    name: update
+    name: Update
     runs-on: ubuntu-latest
 
     steps:
