@@ -1,15 +1,16 @@
 # srbstp
 Simplified Serbian Text Processing
+[![Up to Date](https://github.com/ikatyang/emoji-cheat-sheet/workflows/Up%20to%20Date/badge.svg)](https://github.com/ikatyang/emoji-cheat-sheet/actions?query=workflow%3A%22Up+to+Date%22)
 
 **srbstp** je biblioteka inspirisana [TextBlob‑om](https://textblob.readthedocs.io/en/dev/), prilagođena srpskom jeziku. Nudi osnovne funkcionalnosti za:
 
-- Tokenizaciju (reči i rečenice)  
-- Rad sa stop rečima i osnovnim leksikonom  
-- Normalizaciju i konverziju ćirilica ↔ latinica  
-- Analizu sentimenta (leksikon‑bazirani pristup)  
-- Klasifikaciju (Naive Bayes)  
-- Prevođenje (eksterni API ili modeli)  
-- Part‑of‑Speech (POS) tagovanje (sopstveni model uz NLTK ili integracija s drugim alatima)
+- Tokenizaciju (reči i rečenice) :x:  
+- Rad sa stop rečima i osnovnim leksikonom :white_check_mark: 
+- Normalizaciju i konverziju ćirilica ↔ latinica :white_check_mark: 
+- Analizu sentimenta (leksikon‑bazirani pristup) :white_check_mark: 
+- Klasifikaciju (Naive Bayes) :white_check_mark: 
+- Prevođenje (eksterni API ili modeli) :x: 
+- Part‑of‑Speech (POS) tagovanje (sopstveni model uz NLTK ili integracija s drugim alatima) :white_check_mark:
 Pruža jednostavan API za uranjanje u uobičajene zadatke obrade prirodnog jezika (NLP), kao što su označavanje dela govora, izdvajanje imenskih fraza, analiza osećanja, klasifikacija i još mnogo toga.
 
 ---
