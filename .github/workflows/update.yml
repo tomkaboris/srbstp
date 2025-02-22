@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  test:
-    name: Run Tests
+  update:
+    name: update
     runs-on: ubuntu-latest
 
     steps:
